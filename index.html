@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Pharaoh Chirchir — Data Analyst & BI Specialist</title>
+  <meta name="description" content="Pharaoh Chirchir is an experienced Data Analyst and BI Specialist with an MSc in Data Analytics, specialising in Python, SQL, Power BI, and machine learning." />
+  <meta name="author" content="Pharaoh Chirchir" />
+  <link rel="canonical" href="https://chirchirp.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chirchirp.github.io/" />
+  <meta property="og:title" content="Pharaoh Chirchir — Data Analyst & BI Specialist" />
+  <meta property="og:description" content="End-to-end data analytics: from raw data to boardroom-ready insights. Python, SQL, Power BI, Machine Learning." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD Résumé -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pharaoh Kipkirui Chirchir",
+    "url": "https://chirchirp.github.io/",
+    "email": "chirkiruiphero@gmail.com",
+    "jobTitle": "Data Analyst",
+    "description": "Experienced Data Analyst and BI Specialist with MSc in Data Analytics from Nexford University.",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Nexford University" },
+      { "@type": "CollegeOrUniversity", "name": "Chuka University" }
+    ],
+    "knowsAbout": ["Data Analysis", "Python", "SQL", "Power BI", "Machine Learning", "Data Visualisation"],
+    "sameAs": [
+      "https://github.com/Chirchirp",
+      "https://linkedin.com/in/pharaoh-chirchir-m-sc-0b600b138/"
+    ]
+  }
+  </script>
+
+  <!-- Performance: preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Critical CSS inline for fast first paint -->
+  <style>
+    :root {
+      --white: #ffffff;
+      --black: #111111;
+      --grey-1: #222222;
+      --grey-2: #444444;
+      --grey-3: #666666;
+      --grey-4: #888888;
+      --grey-5: #bbbbbb;
+      --grey-6: #e8e8e8;
+      --grey-7: #f4f4f4;
+      --border: #e0e0e0;
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2.5rem;
+      --space-xl: 4rem;
+      --space-2xl: 6rem;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      --radius: 4px;
+      --transition: 0.22s ease;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--white);
+      color: var(--black);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    section { scroll-margin-top: 80px; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { cursor: pointer; font-family: inherit; }
+    ul { list-style: none; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+  </style>
+
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <!-- CSP suggestion (activate via server header in production) -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; script-src 'self' https://cdn.jsdelivr.net"> -->
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top" role="banner">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Pharaoh Chirchir — home">PC</a>
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume.pdf" class="nav-resume" download aria-label="Download CV as PDF">Download CV</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+    <button class="mobile-nav__close" id="mobile-close" aria-label="Close menu">✕</button>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="assets/resume.pdf" class="mobile-link" download>Download CV</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div class="hero-text fade-up">
+          <span class="hero-eyebrow">Data Analyst · BI Specialist</span>
+          <h1 class="hero-name">Pharaoh<br>Chirchir</h1>
+          <p class="hero-tagline">Turning messy data into decisions that matter — from ETL pipelines to boardroom dashboards.</p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="assets/resume.pdf" class="btn btn-secondary" download>Download CV</a>
+          </div>
+          <div class="hero-social" aria-label="Social links">
+            <a href="https://github.com/Chirchirp" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/pharaoh-chirchir-m-sc-0b600b138/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zm-46.44-341a53.75 53.75 0 1 1 53.75-53.75A53.75 53.75 0 0 1 53.84 107zM447.9 448h-92.68V302.4c0-34.7-12.45-58.4-43.54-58.4-23.72 0-37.86 16-44.06 31.5-2.28 5.5-2.85 13.2-2.85 20.9V448h-92.68s1.23-261.9 0-288.1h92.68v40.8c12.3-19 34.3-46.2 83.38-46.2 60.88 0 106.6 39.8 106.6 125.4V448z"/></svg>
+            </a>
+            <a href="mailto:chirkiruiphero@gmail.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrap fade-up delay-1">
+          <div class="hero-image-frame">
+            <img
+              src="images/pharaoh-photo.jpg"
+              alt="Pharaoh Chirchir, Data Analyst based in Nairobi"
+              width="420" height="520"
+              loading="eager"
+              class="hero-photo"
+            />
+          </div>
+          <div class="hero-badge">
+            <span class="badge-num">7+</span>
+            <span class="badge-label">Projects<br>Delivered</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <svg width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M8 11L2 5h12z"/></svg>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section-pad" id="about" aria-labelledby="about-heading">
+      <div class="container about-inner">
+        <div class="section-label fade-up">About</div>
+        <h2 class="section-heading fade-up" id="about-heading">Data, decisions,<br>and everything in between</h2>
+        <div class="about-body fade-up">
+          <div class="about-text">
+            <p>I'm a dedicated Data Analyst with an MSc in Data Analytics from Nexford University and a background in Economics and Statistics. I bridge the gap between raw data and real decisions — building pipelines, dashboards, and models that organisations actually use.</p>
+            <p>My work spans end-to-end analytics: collecting data from third-party APIs, cleaning and transforming it with Python and SQL, then delivering insights through Power BI, Tableau, or custom visualisations. I've built fraud-detection models with 97% recall, churn predictors deployed via Flask, and ETL workflows that cut manual effort by more than half.</p>
+            <p>Beyond the day job, I write about data trends on my blog, mentor junior analysts, and keep sharp through competitive programming on HackerRank. I believe the democratisation of data education is one of the most powerful forces in the world right now.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">MSc</span>
+              <span class="stat-desc">Data Analytics,<br>Nexford University</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">97%</span>
+              <span class="stat-desc">Recall on fraud<br>detection model</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">89%</span>
+              <span class="stat-desc">Accuracy, churn<br>XGBoost model</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">60%+</span>
+              <span class="stat-desc">Reduction in<br>manual ETL work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills section-pad bg-tint" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-label fade-up">Skills</div>
+        <h2 class="section-heading fade-up" id="skills-heading">Tools built on,<br>problems solved with</h2>
+        <div class="skills-tiles fade-up">
+
+          <!-- Tile 1: Data Wrangling -->
+          <div class="skill-tile">
+            <div class="skill-tile__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v4c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 9v4c0 1.66 4.03 3 9 3s9-1.34 9-3V9"/><path d="M3 13v4c0 1.66 4.03 3 9 3s9-1.34 9-3v-4"/></svg>
+            </div>
+            <h3 class="skill-tile__title">Data Wrangling</h3>
+            <ul class="skill-tile__list">
+              <li>Python · Pandas · NumPy</li>
+              <li>SQL (T-SQL, MySQL, PostgreSQL)</li>
+              <li>Data Cleaning & Transformation</li>
+              <li>Excel · Power Query</li>
+              <li>Exploratory Data Analysis</li>
+            </ul>
+          </div>
+
+          <!-- Tile 2: Data Engineering -->
+          <div class="skill-tile">
+            <div class="skill-tile__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="M6 8h.01M9 8h6M6 11h.01M9 11h6"/></svg>
+            </div>
+            <h3 class="skill-tile__title">Data Engineering</h3>
+            <ul class="skill-tile__list">
+              <li>ETL / ELT Pipeline Design</li>
+              <li>Microsoft Fabric (Bronze/Silver/Gold)</li>
+              <li>Azure Data Factory · Synapse</li>
+              <li>Snowflake · BigQuery · Redshift</li>
+              <li>SSIS · SSAS · dbt · Airflow</li>
+            </ul>
+          </div>
+
+          <!-- Tile 3: Analysis & Modelling -->
+          <div class="skill-tile">
+            <div class="skill-tile__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-4 4 4 4-8"/></svg>
+            </div>
+            <h3 class="skill-tile__title">Analysis & Modelling</h3>
+            <ul class="skill-tile__list">
+              <li>Statistical Analysis · R · Python</li>
+              <li>Machine Learning (Scikit-learn, XGBoost)</li>
+              <li>Predictive Modelling · Forecasting</li>
+              <li>Customer Segmentation · NLP</li>
+              <li>Fraud & Anomaly Detection</li>
+            </ul>
+          </div>
+
+          <!-- Tile 4: AI Development -->
+          <div class="skill-tile">
+            <div class="skill-tile__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4z"/><path d="M12 14c-6 0-8 3-8 5v1h16v-1c0-2-2-5-8-5z"/><path d="M17 8.5c1.5 0 2.5 1 2.5 2.5 0 .9-.4 1.7-1 2.2M7 8.5C5.5 8.5 4.5 9.5 4.5 11c0 .9.4 1.7 1 2.2"/></svg>
+            </div>
+            <h3 class="skill-tile__title">AI Development</h3>
+            <ul class="skill-tile__list">
+              <li>LLM Integration & Prompt Engineering</li>
+              <li>RAG Pipelines · Vector Databases</li>
+              <li>Intelligent Assistant Development</li>
+              <li>Python · Flask · FastAPI Deployment</li>
+              <li>Model Fine-tuning & Evaluation</li>
+            </ul>
+          </div>
+
+          <!-- Tile 5: Visualisation -->
+          <div class="skill-tile">
+            <div class="skill-tile__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3 class="skill-tile__title">Visualisation & BI</h3>
+            <ul class="skill-tile__list">
+              <li>Power BI · Advanced DAX</li>
+              <li>Tableau · Looker</li>
+              <li>Matplotlib · Seaborn · Plotly</li>
+              <li>Streamlit Dashboards</li>
+              <li>Data Storytelling · KPI Design</li>
+            </ul>
+          </div>
+
+          <!-- Tile 6: Tools & Infrastructure -->
+          <div class="skill-tile">
+            <div class="skill-tile__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="skill-tile__title">Tools & Infrastructure</h3>
+            <ul class="skill-tile__list">
+              <li>Git · GitHub · Docker</li>
+              <li>Azure Databricks · AWS (S3, Redshift)</li>
+              <li>Jupyter Notebook · VS Code</li>
+              <li>Agile / Scrum · PDCA · 5 Whys</li>
+              <li>Data Governance & SOPs</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects section-pad" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-label fade-up">Projects</div>
+        <h2 class="section-heading fade-up" id="projects-heading">Work that proves<br>the point</h2>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card fade-up" aria-label="Customer Churn Prediction project">
+            <div class="project-card__header">
+              <span class="project-tag">Machine Learning · Live App</span>
+            </div>
+            <h3 class="project-card__title">Customer Churn Prediction</h3>
+            <p class="project-card__desc">An end-to-end churn prediction application — upload your customer data, train an XGBoost model in the browser, and get instant churn-risk scores. No code required; results appear in seconds and can be exported for your CRM or retention team.</p>
+            <ul class="project-card__impact">
+              <li>89% model accuracy validated on held-out telecom data</li>
+              <li>Identifies the top churn-risk drivers so retention effort goes to the right customers first</li>
+              <li>Fully interactive: train, score, and download predictions — all in one Streamlit session</li>
+            </ul>
+            <div class="project-card__stack">
+              <span>Python</span><span>XGBoost</span><span>Streamlit</span><span>Scikit-learn</span><span>Pandas</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://chirchirp-customer-churn-predictive-model-app-2cnnvs.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn--streamlit">
+                <!-- Streamlit "S" icon -->
+                <svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" fill="currentColor"><path d="M16.137 0 .138 9.17l5.836 3.39 10.163-5.902 10.162 5.903 5.563-3.233L16.137 0zm-9.98 12.902-6.02 3.498 6.02 3.498v4.98L16.137 32l9.98-7.122v-4.98l6.02-3.498-6.02-3.498v-3.532L16.137 14.49 6.157 9.37v3.532z"/></svg>
+                Launch Live App
+              </a>
+              
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card fade-up delay-1" aria-label="AI Sentiment Automation Engine project">
+            <div class="project-card__header">
+              <span class="project-tag">NLP · AI · Live App</span>
+            </div>
+            <h3 class="project-card__title">AI Sentiment Automation Engine</h3>
+            <p class="project-card__desc">A self-training sentiment analysis engine — bring your own text data, let the model learn your domain's language, and get every record automatically labelled as positive, negative, or neutral. Built for teams who need fast, consistent sentiment scoring without writing a line of code.</p>
+            <ul class="project-card__impact">
+              <li>Upload any CSV of text data and the engine auto-labels it in seconds — no manual annotation needed</li>
+              <li>Domain-adaptive training means the model learns your specific vocabulary, not just generic sentiment</li>
+              <li>Outputs a downloadable labelled dataset ready for dashboards, reporting, or further ML pipelines</li>
+            </ul>
+            <div class="project-card__stack">
+              <span>Python</span><span>NLP</span><span>Streamlit</span><span>Scikit-learn</span><span>Transformers</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://ai-sentiment-automation-engine-qfxwesm8tdnfmi8xfl7x5m.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn--streamlit">
+                <svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" fill="currentColor"><path d="M16.137 0 .138 9.17l5.836 3.39 10.163-5.902 10.162 5.903 5.563-3.233L16.137 0zm-9.98 12.902-6.02 3.498 6.02 3.498v4.98L16.137 32l9.98-7.122v-4.98l6.02-3.498-6.02-3.498v-3.532L16.137 14.49 6.157 9.37v3.532z"/></svg>
+                Launch Live App
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card fade-up delay-2" aria-label="HR Analytics Dashboard project">
+            <div class="project-card__header">
+              <span class="project-tag">BI · Dashboards</span>
+            </div>
+            <h3 class="project-card__title">HR Analytics Dashboard</h3>
+            <p class="project-card__desc">Built an interactive Power BI dashboard tracking employee attrition, engagement, and workforce composition across departments.</p>
+            <ul class="project-card__impact">
+              <li>Cut attrition reporting time from 3 days to under 30 minutes</li>
+              <li>Surfaced attrition hotspots, guiding targeted HR interventions</li>
+              <li>Adopted by HR team as primary monthly review tool</li>
+            </ul>
+            <div class="project-card__stack">
+              <span>Power BI</span><span>DAX</span><span>SQL</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Chirchirp/Power-BI-Project-on-Employee-Attrition" target="_blank" rel="noopener noreferrer" class="project-btn project-btn--github">
+                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card fade-up" aria-label="HR Attrition Predictor project">
+            <div class="project-card__header">
+              <span class="project-tag">ML · HR Analytics · Live App</span>
+            </div>
+            <h3 class="project-card__title">HR Attrition Predictor</h3>
+            <p class="project-card__desc">An adaptive workforce intelligence tool that works with any employee dataset. Train the model on your historical HR data, then point it at your current workforce to surface who is at highest risk of leaving — and why — before they hand in their notice.</p>
+            <ul class="project-card__impact">
+              <li>Dataset-agnostic: auto-detects your column structure and trains a tailored model on the spot</li>
+              <li>Generates individual risk scores plus the top departure drivers for each employee segment</li>
+              <li>Equips HR teams to act proactively — reducing costly regrettable attrition before it happens</li>
+            </ul>
+            <div class="project-card__stack">
+              <span>Python</span><span>Streamlit</span><span>Scikit-learn</span><span>XGBoost</span><span>Pandas</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://chirchirp-hr-attrition-predictor-app-x0new1.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn--streamlit">
+                <svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" fill="currentColor"><path d="M16.137 0 .138 9.17l5.836 3.39 10.163-5.902 10.162 5.903 5.563-3.233L16.137 0zm-9.98 12.902-6.02 3.498 6.02 3.498v4.98L16.137 32l9.98-7.122v-4.98l6.02-3.498-6.02-3.498v-3.532L16.137 14.49 6.157 9.37v3.532z"/></svg>
+                Launch Live App
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card fade-up delay-1" aria-label="Consumer Insights for Beats project">
+            <div class="project-card__header">
+              <span class="project-tag">Python · Segmentation</span>
+            </div>
+            <h3 class="project-card__title">Consumer Insights — Beats</h3>
+            <p class="project-card__desc">Segmentation and trend analysis of consumer behaviour data, producing interactive visualisations to guide product and marketing strategy.</p>
+            <ul class="project-card__impact">
+              <li>Segmented 50k+ consumers into 6 actionable personas</li>
+              <li>Surfaced purchase-pattern shifts 3 months ahead of campaign</li>
+              <li>Interactive charts embedded directly into stakeholder decks</li>
+            </ul>
+            <div class="project-card__stack">
+              <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://colab.research.google.com/drive/1XNxkdTQ6K0fG2OkM0QLvi35e9zQ_1ODe?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-btn project-btn--colab">
+                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                Open in Colab
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card fade-up delay-2" aria-label="AI Trends and Insights project">
+            <div class="project-card__header">
+              <span class="project-tag">Research · Visualisation</span>
+            </div>
+            <h3 class="project-card__title">AI Trends & Insights</h3>
+            <p class="project-card__desc">Research project examining global AI adoption rates and sectoral impact, combining statistical analysis with compelling narrative visualisations.</p>
+            <ul class="project-card__impact">
+              <li>Analysed datasets from 40+ countries over a 10-year span</li>
+              <li>Produced 12 publication-ready charts cited in peer discussions</li>
+              <li>Report read by 200+ professionals in the data community</li>
+            </ul>
+            <div class="project-card__stack">
+              <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Statistics</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Chirchirp/The-Rise-of-Artificial-Intelligence-Trends-Impact-and-Insights.ipynb" target="_blank" rel="noopener noreferrer" class="project-btn project-btn--github">
+                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-more fade-up">
+          <a href="https://github.com/Chirchirp" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            View all projects on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE & EDUCATION ===== -->
+    <section class="experience section-pad bg-tint" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-label fade-up">Experience & Education</div>
+        <h2 class="section-heading fade-up" id="experience-heading">Background that<br>backs it up</h2>
+
+        <!-- Career progression bar -->
+        <div class="career-arc fade-up">
+          <div class="career-arc__step">
+            <span class="career-arc__label">2016</span>
+            <span class="career-arc__role">Claims Analyst</span>
+          </div>
+          <div class="career-arc__arrow" aria-hidden="true">→</div>
+          <div class="career-arc__step">
+            <span class="career-arc__label">2017</span>
+            <span class="career-arc__role">Case Processing<br>Assistant</span>
+          </div>
+          <div class="career-arc__arrow" aria-hidden="true">→</div>
+          <div class="career-arc__step">
+            <span class="career-arc__label">2020</span>
+            <span class="career-arc__role">Case Processing<br>Analyst</span>
+          </div>
+          <div class="career-arc__arrow" aria-hidden="true">→</div>
+          <div class="career-arc__step">
+            <span class="career-arc__label">2021</span>
+            <span class="career-arc__role">Senior Analyst</span>
+          </div>
+          <div class="career-arc__arrow" aria-hidden="true">→</div>
+          <div class="career-arc__step">
+            <span class="career-arc__label">2022</span>
+            <span class="career-arc__role">Regional<br>Data Analyst</span>
+          </div>
+          <div class="career-arc__arrow" aria-hidden="true">→</div>
+          <div class="career-arc__step career-arc__step--current">
+            <span class="career-arc__label">2025</span>
+            <span class="career-arc__role">Senior Regional<br>BI Developer</span>
+          </div>
+        </div>
+
+        <div class="timeline fade-up">
+
+          <div class="timeline-group">
+            <h3 class="timeline-group__title">Experience</h3>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot timeline-item__dot--active" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">May 2025 – Present</span>
+                  <span class="timeline-item__badge">Current</span>
+                </div>
+                <h4 class="timeline-item__role">Senior Regional BI Developer</h4>
+                <p class="timeline-item__org">GardaWorld Security · Africa & Middle East</p>
+                <p class="timeline-item__desc">Regional focal point for BI across Africa and the Middle East. Architected a Microsoft Fabric data warehouse (Bronze/Silver/Gold) ingesting Dynamics BC and CRM data, cutting report prep time by <strong>75%</strong>. Built financial-forecasting dashboards monitoring 12+ country operations and delivered a 6-month Power BI training programme to 20+ country analysts.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">Sep 2022 – Apr 2025</span>
+                </div>
+                <h4 class="timeline-item__role">Regional Operations Data Analyst</h4>
+                <p class="timeline-item__org">International Organization for Migration (IOM) · Nairobi</p>
+                <p class="timeline-item__desc">Automated Power BI and SQL reporting, saving <strong>70+ staff-hours/month</strong>. Implemented an Exit Permit timeline dashboard that reduced permit processing time by <strong>41%</strong> (50 → 29 days). Delivered KPI dashboards that contributed to a <strong>15% uplift</strong> in successful donor funding proposals. Spearheaded a data-strategy symposium with the ICRC that influenced data-protection policy across partner agencies.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">Sep 2021 – Aug 2022</span>
+                </div>
+                <h4 class="timeline-item__role">Senior Analyst — Case Processing</h4>
+                <p class="timeline-item__org">Church World Service RSC Africa · Nairobi</p>
+                <p class="timeline-item__desc">Implemented <strong>40+ dynamic Tableau and SQL dashboards</strong> across 15 departments, improving efficiency by 30%. Led the Refugee Management Working Group with the Government of Kenya to build an interoperable refugee database. Managed and mentored a team of 8 Case Processing Assistants. Won the <strong>Most Innovative Employee Award 2022</strong>.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">Apr 2020 – Aug 2021</span>
+                </div>
+                <h4 class="timeline-item__role">Case Processing Analyst</h4>
+                <p class="timeline-item__org">Church World Service RSC Africa · Nairobi</p>
+                <p class="timeline-item__desc">Built a Python ML model to forecast refugee departure readiness. Led NLP sentiment analysis of refugee and partner complaints, producing executive dashboards and strategic recommendations. Managed ETL pipelines for 100,000+ case records during system migration to the START platform.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">May 2017 – Mar 2020</span>
+                </div>
+                <h4 class="timeline-item__role">Case Processing Assistant</h4>
+                <p class="timeline-item__org">Church World Service RSC Africa · Nairobi</p>
+                <p class="timeline-item__desc">Improved reporting accuracy by <strong>30%</strong> via a Tableau error-tracking dashboard. Developed PRM reporting visualisations tracking refugee case volumes and drop-off at each processing stage across all African missions.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">Sep 2016 – Apr 2017</span>
+                </div>
+                <h4 class="timeline-item__role">Claims Data Analyst</h4>
+                <p class="timeline-item__org">Resolution Insurance · Nairobi</p>
+                <p class="timeline-item__desc">Designed a fraud-detection ML model for medical claims achieving <strong>94% accuracy</strong>. Performed financial reconciliations and claims analysis, strengthening compliance and transparency in payment processing.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="timeline-group">
+            <h3 class="timeline-group__title">Education & Certifications</h3>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">Nov 2023 – Dec 2024</span>
+                </div>
+                <h4 class="timeline-item__role">MSc Data Analytics</h4>
+                <p class="timeline-item__org">Nexford University</p>
+                <p class="timeline-item__desc">Machine Learning, Statistical Modelling, Data Engineering, Business Analytics. Capstone: deployed a real-time churn prediction API using XGBoost and Flask.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">Sep 2012 – Nov 2016</span>
+                </div>
+                <h4 class="timeline-item__role">BSc Economics & Statistics</h4>
+                <p class="timeline-item__org">Chuka University</p>
+                <p class="timeline-item__desc">Econometrics, Inferential Statistics, Quantitative Methods, Data Collection Methodologies.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">Active</span>
+                </div>
+                <h4 class="timeline-item__role">Microsoft Certifications</h4>
+                <p class="timeline-item__org">Microsoft</p>
+                <p class="timeline-item__desc">
+                  Certified: Power BI Data Analyst Associate · Certified: Fabric Data Engineer Associate
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__dot" aria-hidden="true"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__period">Ongoing</span>
+                </div>
+                <h4 class="timeline-item__role">Additional Certifications</h4>
+                <p class="timeline-item__org">Various platforms</p>
+                <p class="timeline-item__desc">
+                  Extended E-Certificate in Leadership & Management (UNSSC) · Career Essentials in Cyber Security (Microsoft) · Introduction to Business Intelligence (CFI)
+                  <br><a href="https://www.linkedin.com/in/pharaoh-chirchir-m-sc-0b600b138/details/certifications/" target="_blank" rel="noopener noreferrer" class="inline-link">View all certifications →</a>
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOG / RESOURCES ===== -->
+    <section class="resources section-pad" id="resources" aria-labelledby="resources-heading">
+      <div class="container">
+        <div class="section-label fade-up">Resources</div>
+        <h2 class="section-heading fade-up" id="resources-heading">Writing &amp; resources<br>worth your time</h2>
+        <div class="resources-grid-2 fade-up">
+
+          <a href="https://chirchirp.github.io/Data-Analyst-Blog/#" target="_blank" rel="noopener noreferrer" class="resource-tile">
+            <div class="resource-tile__top">
+              <div class="resource-tile__icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <span class="resource-tile__tag">Blog</span>
+            </div>
+            <h3 class="resource-tile__title">Data Analytics Blog</h3>
+            <p class="resource-tile__desc">Practical, jargon-free posts on analysis techniques, Power BI tips, Python workflows, and industry trends — written for analysts at all experience levels.</p>
+            <span class="resource-tile__cta">
+              Read articles
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+            </span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/pharaoh-chirchir-m-sc-0b600b138/details/certifications/" target="_blank" rel="noopener noreferrer" class="resource-tile">
+            <div class="resource-tile__top">
+              <div class="resource-tile__icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </div>
+              <span class="resource-tile__tag">Certifications</span>
+            </div>
+            <h3 class="resource-tile__title">Professional Certifications</h3>
+            <p class="resource-tile__desc">Verified credentials from Microsoft, UNSSC, Corporate Finance Institute, and LinkedIn Learning — covering Power BI, Fabric Data Engineering, Cyber Security, and BI fundamentals.</p>
+            <span class="resource-tile__cta">
+              View on LinkedIn
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section-pad bg-tint" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-inner">
+        <div class="contact-text fade-up">
+          <div class="section-label">Contact</div>
+          <h2 class="section-heading" id="contact-heading">Let's talk data</h2>
+          <p class="contact-blurb">Whether you have a project, a question, or just want to connect — my inbox is open. I typically respond within 24 hours.</p>
+          <div class="contact-details">
+            <a href="mailto:chirkiruiphero@gmail.com" class="contact-detail">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              chirkiruiphero@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/pharaoh-chirchir-m-sc-0b600b138/" target="_blank" rel="noopener noreferrer" class="contact-detail">
+              <svg width="18" height="18" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zm-46.44-341a53.75 53.75 0 1 1 53.75-53.75A53.75 53.75 0 0 1 53.84 107zM447.9 448h-92.68V302.4c0-34.7-12.45-58.4-43.54-58.4-23.72 0-37.86 16-44.06 31.5-2.28 5.5-2.85 13.2-2.85 20.9V448h-92.68s1.23-261.9 0-288.1h92.68v40.8c12.3-19 34.3-46.2 83.38-46.2 60.88 0 106.6 39.8 106.6 125.4V448z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Chirchirp" target="_blank" rel="noopener noreferrer" class="contact-detail">
+              <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap fade-up delay-1">
+          <form id="contact-form" class="contact-form" novalidate>
+            <!-- Honeypot anti-spam field -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Website (leave blank)</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-group">
+              <label for="name" class="form-label">Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" class="form-input" required autocomplete="name" placeholder="Your name" />
+              <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" required autocomplete="email" placeholder="you@example.com" />
+              <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" class="form-input form-textarea" required rows="5" placeholder="Tell me about your project or question…"></textarea>
+              <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary form-submit" id="form-submit">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading" aria-hidden="true" hidden>Sending…</span>
+              </button>
+              <p class="form-note">
+                Or email directly: <a href="mailto:chirkiruiphero@gmail.com">chirkiruiphero@gmail.com</a>
+              </p>
+            </div>
+            <div class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+              ✓ Message sent — I'll reply within 24 hours.
+            </div>
+          </form>
+          <!-- Formspree integration: change action to https://formspree.io/f/YOUR_FORM_ID and add method="POST" when ready -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">Pharaoh Chirchir</span>
+        <p class="footer-tagline">Data Analyst · Nairobi, Kenya</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume.pdf" download>CV</a>
+      </nav>
+      <div class="footer-social" aria-label="Social media links">
+        <a href="https://github.com/Chirchirp" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg width="20" height="20" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/pharaoh-chirchir-m-sc-0b600b138/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg width="20" height="20" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zm-46.44-341a53.75 53.75 0 1 1 53.75-53.75A53.75 53.75 0 0 1 53.84 107zM447.9 448h-92.68V302.4c0-34.7-12.45-58.4-43.54-58.4-23.72 0-37.86 16-44.06 31.5-2.28 5.5-2.85 13.2-2.85 20.9V448h-92.68s1.23-261.9 0-288.1h92.68v40.8c12.3-19 34.3-46.2 83.38-46.2 60.88 0 106.6 39.8 106.6 125.4V448z"/></svg>
+        </a>
+        <a href="mailto:chirkiruiphero@gmail.com" aria-label="Send email">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Pharaoh Kipkirui Chirchir · All rights reserved</p>
+        <p>Built with semantic HTML, vanilla CSS & JS · <a href="https://github.com/Chirchirp" target="_blank" rel="noopener noreferrer">View source</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
